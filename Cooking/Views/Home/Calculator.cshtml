@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Get a free estimate";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Want to learn more about cooking? I'd be happy to teach you. Use the calculator below to estimate how much lessons will cost</p>
+
+<form>
+    <label>Number of lessons: </label><br />
+    <input type="number" min="1" step="1" id="numLessons"/><br />
+    <label>Length of lessons (hours): </label><br />
+    <input type="number" min="0.5" step="0.5" id="lessonLength"/><br />
+    <label>Price per hour: </label><br />
+    <input type="number" value="24.99" step="0.01" readonly id="priceHour"/><br /><br />
+
+    <label>Total price: </label><br />
+    <input type="number" readonly step="0.01" id="totalPrice"/>
+
+    <br /><br />
+    <input type="button" value="Estimate" id="btnSubmit" />
+</form>
